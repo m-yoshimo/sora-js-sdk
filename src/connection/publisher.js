@@ -50,6 +50,7 @@ class ConnectionPublisher extends ConnectionBase {
         }
         else {
           this._pc.addStream(stream);
+          this._callbacks.localconnected(this.cliendId);
         }
         if (typeof this._pc.ontrack === 'undefined') {
           this._pc.onaddstream = event => {

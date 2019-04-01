@@ -49,7 +49,8 @@ class ConnectionBase {
       addstream: function() {},
       removestream: function() {},
       notify: function() {},
-      log: function() {}
+      log: function() {},
+      localconnected: function() {}
     };
     this.authMetadata = null;
   }
